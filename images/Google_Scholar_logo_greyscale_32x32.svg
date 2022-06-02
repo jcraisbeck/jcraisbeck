@@ -1,0 +1,12 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_5">
+   <path stroke="null" id="svg_1" d="m16,25.695l-16,-13.02831l16,-12.66669l0,25.695z" fill="#7D7D7D"/>
+   <path stroke="null" id="svg_2" d="m16,25.695l16,-13.02831l-16,-12.66669l0,25.695z" fill="#646464"/>
+   <circle stroke="null" id="svg_3" r="9.33331" cy="22.66669" cx="16" fill="#BFBFBF"/>
+   <path stroke="null" id="svg_4" d="m7.56481,18.66669c1.498,-3.15331 4.712,-5.33337 8.43519,-5.33337s6.93719,2.18006 8.43519,5.33337l-16.87037,0z" fill="#A1A1A1"/>
+  </g>
+ </g>
+</svg>
