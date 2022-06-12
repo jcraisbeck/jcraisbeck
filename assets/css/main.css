@@ -2326,11 +2326,11 @@ input, select, textarea {
 			display: block;
 		}
 
-		.image.left, .image.right {
+		.image.left, .image.right, .image.portrait {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
+			.image.left img, .image.right img, .image.portrait img {
 				width: 100%;
 			}
 
@@ -2355,6 +2355,13 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.image.portrait {
+			float: right;
+			padding: 0 0 0 0;
+			top: 0em;	
+			width: 20%;
+		}
 
 		.image.main {
 			display: block;
