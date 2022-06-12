@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research Statement</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Research Statement</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="biography.html">Biography</a></li>
+							<li><a href="MathematicalReinforcementLearning.html">Mathematical Reinforcement Learning</a></li>
+							<li><a href="ResearchStatement.html">Research Statement</a></li>
+							<li><a href="https://all.cs.umass.edu">Autonomous Learning Laboratory</a></li>
+							<li><a href="https://mattwallen.com">Collaborator: Matthew Allen</a></li>
+							<li><a href="https://curriculum-vitae.piofn.com">Curriculum Vitae</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Research Statement</h1>
+							<p>My interest is in <a href="MathematicalReinforcementLearning.html">Mathematical Reinforcement Learning</a>, and in particular in defining the relationships between agents and decision processes. My belief is that a rigorous account of these relationships on a level beyond the traditional state-action-assignment paradigm is critical to advance the study of Reinforcement Learning.</p>
+							
+							<p>In particular, I believe that the superiority criterion a > b iff E(R(phi|a)) > E(R(phi|b)) is more important to the future of Reinforcement Learning than the optimality criterion offered by Bellman. This is because optimality is rarely achievable or sought, and is in many ways at odds with "learning" itself; the distinction between that which has been "learned" and that which has been "perfected" is commonly understood and profoundly important. Further, the optimality criterion obscures an often enormous class of agents which are optimal under the superiority criterion.</p>
+							
+							<p>All of these issues stem from the same error: Reinforcement <i>Learning</i> has focused more on the product of learning than on the process of learning. In practice, the superiority criterion is ubiquitous, as is its Principle of Optimality-derived cousin, the statewise principle of superiority. The key here is that agents in Reinforcement Learning problems (especially difficult problems) never experience the <i>vast</i> majority of states. Instead, they experience only those states that follow from he actions which they take. Thus, an agent which always moves to the best region of a process does not need to perform well in any other areas to attain the optimal expected reward. Nonetheless, the Statewise Principle of Superiority tells us that any such agent is far from optimal.</p>
+							
+							<p>This problem is lessened considerably by the Policy Improvement Theorem, which guarantees that if we know enough about the problem, these goals are aligned. The real problem shines through when that assumption is violated, that is when we do <i>not</i> know enough about the problem. In this case, we do not know if a proposed agent is actually better than the current agent. Unless properly balanced, the Principle of Optimality might frequently suggest changes to the agent that are detrimental to the expected reward because they improve the reward of an unvisited collection of states. The solution to this problem is to return to the expected reward criterion.</p>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
