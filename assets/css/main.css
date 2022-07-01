@@ -156,7 +156,7 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #881c1c !important;
-		}/*Previous value: f2849e (for all hex codes in this file). Also tried: 15c443. Latest: 881c1c, which is the official UMass Amherst color.*/
+		}/*Previous value: f2849e (for all hex codes in this file). Also tried: 15c443. Latest: 881c1c, which is the official UMass Amherst*/
 
 	strong, b {
 		font-weight: 900;
@@ -2999,7 +2999,7 @@ input, select, textarea {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
+		background: #aaaaaa;/*Previously #585858. This selection improves contrast with UMass Amherst color #881c1c*/
 		color: #ffffff;
 		cursor: default;
 		visibility: hidden;
