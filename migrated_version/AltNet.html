@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AltNet &mdash; John C. Raisbeck</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>John C. Raisbeck</strong></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>AltNet</h1>
+										<p>Maintaining plasticity by alternating active and passive networks.</p>
+									</header>
+
+									<span class="image left"><img src="images/CoLLAs_AltNet.jpeg" alt="AltNet illustration" /></span>
+
+									<p>AltNet is a new approach to addressing plasticity loss during the course of learning. Unlike prior approaches, we do not interfere with the learning steps themselves, achieve complete resetting of the network and optimization scheme, and maintain performance across updates.</p>
+
+									<p>We achieve this by maintaining a passive network in the background while allowing an active network to interact with the environment, switching the passive network into the active role at a fixed interval and resetting the active network as it enters the passive role. This technique allows us to completely reset the weights of learning networks while preventing untrained networks from ever interacting with the environment, which we find experimentally eliminates plasticity loss and performance drops associated with other resetting methods.</p>
+
+									<p><em>AltNet: Addressing the Plasticity-Stability Dilemma in Reinforcement Learning</em> was accepted and presented at AAMAS 2026. An earlier version, <em>AltNet: Alternating Network Resets for Plasticity</em>, was presented as a workshop paper at CoLLAs 2025.</p>
+
+									<ul class="actions">
+										<li><a href="https://dl.acm.org/doi/abs/10.65109/KXRD5206" class="button">AAMAS 2026 (ACM)</a></li>
+										<li><a href="https://openreview.net/forum?id=oD0U7gIixF" class="button">CoLLAs 2025 (OpenReview)</a></li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar-placeholder"></div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/sidebar-loader-inline.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
