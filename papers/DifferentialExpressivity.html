@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Differential Expressivity &mdash; John C. Raisbeck</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']],
+					displayMath: [['$$', '$$'], ['\\[', '\\]']]
+				}
+			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong>John C. Raisbeck</strong></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Learning &amp; Remembering</h1>
+										<p>Differential expressivity constrains learning.</p>
+									</header>
+
+									<p>This paper separates learning into two ingredients. A <em>learning rule</em> decides how an agent would like to change its decisions in response to feedback; a <em>memory rule</em> realizes that change by adjusting the agent's parameters. The distinction sounds tautological, but it isn't: in almost any parameterized system, the memory rule cannot perfectly implement the learning rule's request. We argue that the fidelity of the memory rule to the learning signal is the natural quantity to study when analyzing what a learning system can and cannot achieve.</p>
+
+									<p>To make this precise, we introduce <em>differential expressivity</em>: the set of decision rules an agent can reach with a small update to its parameters. Geometrically, it is the tangent space of the architecture in function space &mdash; the linear span of the partial derivatives of the parameterization with respect to each parameter, evaluated at the current parameters. Whereas classical expressivity results describe every function an architecture could represent in principle, differential expressivity describes only the updates it can achieve locally. It is a strictly smaller and, we argue, more relevant quantity for analyzing a learning agent in motion.</p>
+
+									<p>Given an inner product on function space, we can measure both the size of an update and its cosine alignment with the learning signal. Our main result shows that, to first order, the change in performance under an update $h$ factors as</p>
+
+									$$\Delta P = \cos(\nabla_f P, h) \cdot \|h\| \cdot \|\nabla_f P\|.$$
+
+									<p>An agent controls two of these three factors: the alignment $\cos(\nabla_f P, h)$ and the magnitude $\|h\|$. The functional gradient $\nabla_f P$ is a property of the problem. When step size is bounded, the only thing left to improve is alignment &mdash; and alignment itself is bounded above by the alignment of the differential expressivity with the gradient. That upper bound is a property of the architecture, invisible to memory-rule techniques such as natural gradients.</p>
+
+									<p>This decomposition disentangles a few things that are usually conflated. A vanishing gradient in parameter space could mean the functional gradient is zero (a local optimum of the <em>problem</em>), the update magnitude is zero (a null direction of the architecture), or the alignment is zero (a local optimum of the <em>architecture</em>). It also suggests an alignment-based definition of plasticity: rather than treating plasticity as a global, objective-agnostic property of an architecture, we define the <em>directed plasticity</em> of an agent in a direction $c$ as $\cos(c, h)$, the alignment of the update induced by $c$ with $c$ itself. This gives a plasticity quantity that depends on what the agent is being asked to learn.</p>
+
+									<p><em>Learning &amp; Remembering: Differential Expressivity Constrains Learning</em>, joint work with <a href="https://people.cs.umass.edu/~bsilva/">Bruno Castro da Silva</a>, was accepted at the Finding the Frame workshop at RLC 2026.</p>
+
+									<ul class="actions">
+										<li><a href="https://sites.google.com/view/findingtheframe/accepted-papers?authuser=0" class="button">Finding the Frame (RLC 2026)</a></li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar-placeholder"></div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/sidebar-loader-inline.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

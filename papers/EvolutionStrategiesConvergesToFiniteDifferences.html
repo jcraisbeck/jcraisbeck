@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Evolution Strategies Converges to Finite Differences &mdash; John C. Raisbeck</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong>John C. Raisbeck</strong></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Evolution Strategies Converges to Finite Differences</h1>
+										<p>Raisbeck, Allen, Weissleder, Im, Lee &middot; December 2019 &middot; <a href="https://arxiv.org/abs/2001.01684">arXiv:2001.01684</a></p>
+									</header>
+
+									<h2>Background</h2>
+									<p>In 2017, a team at OpenAI led by <a href="https://research.google/people/106222/">Tim Salimans</a> reported that a method they called <a href="https://openai.com/blog/evolution-strategies/">Evolution Strategies</a> (ES) could compete with tailored reinforcement learning algorithms on Atari and MuJoCo benchmarks. Because ES draws on ideas from evolutionary computation and does not require backpropagation, this result was widely read as evidence that evolutionary methods can be competitive with gradient-based RL at scale.</p>
+
+									<p>At almost the same time, <a href="https://arxiv.org/abs/1712.06564">Zhang et al. (2017)</a> and <a href="https://dl.acm.org/doi/abs/10.1145/3205455.3205474">Lehman et al. (2018)</a> observed that ES looked suspiciously like an old and well-understood class of algorithms known as <em>finite differences</em>. Finite differences approximate the gradient of a function at a point by evaluating the function at small perturbations around that point and combining the resulting values. Prior work had noted the similarity but stopped short of establishing an exact relationship.</p>
+
+									<h2>The result</h2>
+									<p>In this paper we prove that ES and a finite differences gradient estimator, though not identical, <em>converge</em> as the dimension of the vector under optimization grows. Establishing this required some adjustments to the standard formulation of finite differences, which the paper carries out explicitly.</p>
+
+									<p>The consequence is a re-reading of the OpenAI ES result: Salimans' success should be understood as a success of finite differences at large scale, not as a demonstration that evolutionary or genetic methods are competitive with gradient-based RL. The distinction matters both for how we describe the method and for what improvements we should expect to transfer between the two families.</p>
+
+									<hr class="major" />
+
+									<h2>Abstract</h2>
+									<p>Since the debut of Evolution Strategies (ES) as a tool for Reinforcement Learning by Salimans et al. 2017, there has been interest in determining the exact relationship between the Evolution Strategies gradient and the gradient of a similar class of algorithms, Finite Differences (FD) (Zhang et al. 2017, Lehman et al. 2018). Several investigations into the subject have been performed, investigating the formal motivational differences (Lehman et al. 2018) between ES and FD, as well as the differences in a standard benchmark problem in Machine Learning, the MNIST classification problem (Zhang et al. 2017). This paper proves that while the gradients are different, they converge as the dimension of the vector under optimization increases.</p>
+
+									<ul class="actions">
+										<li><a href="https://arxiv.org/abs/2001.01684" class="button">arXiv</a></li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar-placeholder"></div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/sidebar-loader-inline.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
