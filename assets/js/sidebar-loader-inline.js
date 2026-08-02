@@ -48,7 +48,6 @@
 							<li><a href="/posts/Research_Interest.html">Getting Into Research</a></li>
 						</ul>
 					</li>
-					<li><a href="https://all.cs.umass.edu">Autonomous Learning Lab</a></li>
 					<li><a href="https://curriculum-vitae.piofn.com">Curriculum Vitae</a></li>
 				</ul>
 			</nav>
