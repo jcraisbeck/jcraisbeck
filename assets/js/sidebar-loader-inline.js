@@ -16,7 +16,7 @@
 				</header>
 				<ul>
 					<li><a href="/index.html">Home</a></li>
-					<li><a href="/Publications.html">list of publications</a></li>
+					<li><a href="/Publications.html">List of Publications</a></li>
 					<li>
 						<span class="opener">About</span>
 						<ul>
