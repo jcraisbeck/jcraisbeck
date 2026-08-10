@@ -48,6 +48,12 @@
 							<li><a href="/posts/Research_Interest.html">Getting Into Research</a></li>
 						</ul>
 					</li>
+					<li>
+						<span class="opener">Events</span>
+						<ul>
+							<li><a href="/events/rlc_2026.html">RLC 2026 &mdash; Finding the Frame</a></li>
+						</ul>
+					</li>
 					<li><a href="https://curriculum-vitae.piofn.com">Curriculum Vitae</a></li>
 				</ul>
 			</nav>
